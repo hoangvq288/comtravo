@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
+    "expect": "^26.2.0",
+    "mocha": "^8.1.0",
     "nodemon": "^2.0.4"
   }
 }
