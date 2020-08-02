@@ -12,7 +12,6 @@ const getData = async (path) => {
     return await response.json();
   } catch(err){
     console.error(err);
-    // Handle errors here
     return []
   }
 }

@@ -9,9 +9,13 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/flights', async (req, res) => {
-  const data = await getFlights()
-  res.send(data)
+app.get('/flights', async (_, res) => {
+  try {
+    const data = await getFlights()
+    res.send(data)
+  } catch (error) {
+    res.status(400).send(error)
+  }
 })
 
 app.listen(3000, () => {
