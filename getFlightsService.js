@@ -1,6 +1,3 @@
-//(https://discovery-stub.comtravo.com/source1 & https://discovery-stub.comtravo.com/source2)
-//Username: ct_interviewee
-//Password: supersecret
 const fetch = require('node-fetch');
 
 const {removeDuplicate, sortByPrice, formatData} = require('./utils')
@@ -9,7 +6,7 @@ const getData = async (path) => {
   try{
     let response = await fetch('https://discovery-stub.comtravo.com' + path, {
       headers: {
-        'Authorization': 'Basic ' + Buffer.from('ct_interviewee' + ':' + 'supersecret').toString('base64')
+        'Authorization': 'Basic ' + Buffer.from(process.env.USERNAME + ':' + process.env.PASSWORD).toString('base64')
       } 
     })
     return await response.json();

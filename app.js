@@ -1,6 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const { getFlights} = require('./getFlightsService')
+
 
 app.get('/', (req, res) => {
   res.send('Hello world')
