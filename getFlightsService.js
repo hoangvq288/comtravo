@@ -1,10 +1,10 @@
 const fetch = require('node-fetch');
-
+const { fetchWithTimeOut } = require('./fetchWithTimeOut')
 const {removeDuplicate, sortByPrice, formatData} = require('./utils')
  
 const getData = async (path) => {
   try{
-    let response = await fetch('https://discovery-stub.comtravo.com' + path, {
+    let response = await fetchWithTimeOut('https://discovery-stub.comtravo.com' + path, {
       headers: {
         'Authorization': 'Basic ' + Buffer.from(process.env.USERNAME + ':' + process.env.PASSWORD).toString('base64')
       } 
