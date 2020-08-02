@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+require('isomorphic-fetch');
 
 const fetchWithTimeOut = (url, options, timeout = 1000) => {
   return Promise.race([

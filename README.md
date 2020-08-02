@@ -27,7 +27,7 @@ exposed by discovery-stub service(details see below).
 * run `npm install` to setup node modules.
 * run `npm run dev` to start server.
 * run `npm run test` to test the app.
-# 3. Limitations and Furure improvements
+# 3. Limitations and Future improvements
 ### Limitations
 ### Future improvements
 

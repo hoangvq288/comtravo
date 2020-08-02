@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+
 const { fetchWithTimeOut } = require('./fetchWithTimeOut')
 const {removeDuplicate, sortByPrice, formatData} = require('./utils')
  
@@ -24,5 +24,6 @@ const getFlights = async () => {
 }
 
 module.exports = {
-  getFlights
+  getFlights,
+  getData
 }
