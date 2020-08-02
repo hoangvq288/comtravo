@@ -27,11 +27,8 @@ exposed by discovery-stub service(details see below).
 * run `npm install` to setup node modules.
 * run `npm run dev` to start server.
 * run `npm run test` to test the app.
-# 3. Limitations and Future improvements
-### Limitations
-### Future improvements
 
-# 4. References
+# 3. References
 - https://discovery-stub.comtravo.com/api-docs/#/default/get_source1
 - https://nodejs.org/en/docs/guides/buffer-constructor-deprecation/
 - https://dev.to/pixari/what-is-the-best-solution-for-removing-duplicate-objects-from-an-array-4fe1
